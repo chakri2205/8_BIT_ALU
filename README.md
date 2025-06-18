@@ -21,20 +21,20 @@ This project is a Verilog-based implementation of an **8-bit Arithmetic Logic Un
 |--------|------------------|
 | 0000   | Addition          |
 | 0001   | Subtraction       |
-| 0010   | AND               |
-| 0011   | OR                |
-| 0100   | XOR               |
-| 0101   | Left Shift        |
-| 0110   | Right Shift       |
-| 0111   | Equal Comparison  |
-| 1000   | Addition          |
-| 1001   | Subtraction       |
-| 1010   | AND               |
-| 1011   | OR                |
-| 1100   | XOR               |
-| 1101   | Left Shift        |
-| 1110   | Right Shift       |
-| 1111   | Equal Comparison  |
+| 0010   | Multiplication    |
+| 0011   | Division          |
+| 0100   | Modulo Division   |
+| 0101   | AND               |
+| 0110   | OR                |
+| 0111   | XOR               |
+| 1000   | NOT of A          |
+| 1001   | Left Shift        |
+| 1010   | Right Shift       |
+| 1011   | Relation of A,B   |
+| 1100   | 2'sComplement:A   |
+| 1101   | Concatenate B,A   |
+| 1110   | Concatenate A,B   |
+| 1111   | Addition of A with A  |
 ---
 
 ## 📁 File Structure
