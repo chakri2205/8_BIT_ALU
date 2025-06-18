@@ -1,0 +1,140 @@
+Simulator is doing circuit initialization process.
+ALU_SEL:0.Addition
+1.Subtraction
+2.Multiplication
+3.Division
+4.Modulo Division
+5.Bitwise AND
+6.Bitwise OR
+7.Bitwise XOR
+8.Bitwise NOT of A
+9.Left shift of A
+10.Right shift of A
+11.Relation of A and B(>,<,==)
+12.2'sComplement of A
+13.Concatenate(B,A)
+14.Concatenate{A,B}
+15.Addition of A with A
+Reset Test Values
+Finished circuit initialization process.
+------Reset is Worked sucessfully------
+Invalid ALU_SEL=xxxx
+------Addition Test cases------
+A=00011110/ 30  B=00010110/ 22  SUM=0000000000110100/   52 CARRY=0/0
+Addition is successful
+A=11111111/255  B=11111111/255  SUM=0000000111111110/  510 CARRY=1/1
+Carry bit is set||Output exceed 8 bit range
+Addition is successful
+A=11001100/204  B=00000000/  0  SUM=0000000011001100/  204 CARRY=0/0
+Addition is successful
+A=10101010/170  B=10111011/187  SUM=0000000101100101/  357 CARRY=1/1
+Carry bit is set||Output exceed 8 bit range
+Addition is successful
+------Subtraction test cases------
+A=11010010/210   B=10000001/129  DIFFERENCE=0000000001010001/   81  
+Subtraction is successful
+A=11000100/196   B=00000000/  0  DIFFERENCE=0000000011000100/  196  
+Subtraction is successful
+A=11110101/245   B=11110101/245  DIFFERENCE=0000000000000000/    0  
+Subtraction is successful
+B is greater than A so 2'complement output is 0000000001000001  / -   65
+Subtraction is falied
+------Multiplication test cases------
+A=00001111/ 15   B=00001100/ 12   PRODUCT=0000000010110100/  180   
+Multiplication is successful
+A=10101111/175   B=00000001/  1   PRODUCT=0000000010101111/  175   
+Multiplication is successful
+A=11011110/222   B=00000000/  0   PRODUCT=0000000000000000/    0   
+Multiplication is successful
+A=11111111/255   B=11111111/255   PRODUCT=1111111000000001/65025   
+Multiplication is successful
+------Division test cases------
+A=11111110/254    B=01111111/127   DIVISION=0000000000000010/    2   
+Division is successful
+A=11100110/230    B=00000001/  1   DIVISION=0000000011100110/  230   
+Division is successful
+A=11111110/254  B=00000000/  0 
+Invalid Input B
+Division can't be done
+A=01111111/127    B=11001000/200   DIVISION=0000000000000000/    0   
+Division is successful
+------Modulo Division test cases------
+A=11110000/240    B=00001111/ 15   MODULO DIVISION=0000000000000000/    0   
+Modulo Division is successful
+A=11110111/247    B=11001000/200   MODULO DIVISION=0000000000101111/   47   
+Modulo Division is successful
+A=01001110/ 78    B=00000000/  0 
+Invalid Input B
+Modulo Division is can't be done 
+------Bitwise AND------
+A=01111011    B=11011111  BITWISE AND=0000000001011011  
+Bit wise AND is sucessful
+A=10000001    B=11111111  BITWISE AND=0000000010000001  
+Bit wise AND is sucessful
+A=10001011    B=00000000  BITWISE AND=0000000000000000  
+Bit wise AND is sucessful
+------Bitwise OR------
+A=10001111   B=11001000  BITWISE OR=0000000011001111  
+Bit wise OR is sucessful
+A=11111010   B=00000000  BITWISE OR=0000000011111010  
+Bit wise OR is sucessful
+A=00000000   B=00000000  BITWISE OR=0000000000000000  
+Bit wise OR is sucessful
+------Bitwise XOR------
+A=10101001   B=11011101  BITWISE XOR=0000000001110100  
+Bit wise XOR is sucessful
+A=11111111   B=11111111  BITWISE XOR=0000000000000000  
+Bit wise XOR is sucessful
+A=10101010   B=01010101  BITWISE XOR=0000000011111111  
+Bit wise XOR is sucessful
+------NOT TEST CASES------
+A=11000100     BITWISE NOT OF A=0000000000111011  
+Bit wise NOT is sucessful
+A=00000000     BITWISE NOT OF A=0000000011111111  
+Bit wise NOT is sucessful
+A=11111111     BITWISE NOT OF A=0000000000000000  
+Bit wise NOT is sucessful
+------LEFT SHIFT------
+A=11011111     LEFT SHIFT OF A BY 1=0000000010111110  
+LEFT SHIFT OPERATION is sucessful
+A=01100011     LEFT SHIFT OF A BY 1=0000000011000110  
+LEFT SHIFT OPERATION is sucessful
+------RIGHT SHIFT------
+A=11111111     RIGHT SHIFT OF A BY 1=0000000001111111  
+RIGHT SHIFT OPERATION is sucessful
+A=10111110     RIGHT SHIFT OF A BY 1=0000000001011111  
+RIGHT SHIFT OPERATION is sucessful
+------Relational operations------
+A is equal to B
+Relational Operator perfect
+A is greater than B
+Relational Operator perfect
+B is greater than A
+Relational Operator perfect
+------2'sComplement Test cases------
+A=01001011     2'COMPLEMENT OF A=0000000010110101  
+2's Complement is Sucessful
+A=00000000     2'COMPLEMENT OF A=0000000100000000  
+2's Complement is Sucessful
+------Concatenate {B,A}------
+A=00001010   B=00101101  CONCATENATE OF B,A=0010110100001010  
+Conactenate of {B,A} is sucessful
+A=00000000   B=11111111  CONCATENATE OF B,A=1111111100000000  
+Conactenate of {B,A} is sucessful
+A=11111111   B=00000000  CONCATENATE OF B,A=0000000011111111  
+Conactenate of {B,A} is sucessful
+------Concatenate {A,B}------
+A=01011111   B=00011001  CONCATENATE OF A,B=0101111100011001  
+Conactenate of {A,B} is sucessful
+A=11111111   B=00000000  CONCATENATE OF A,B=1111111100000000  
+Conactenate of {A,B} is sucessful
+A=00000000   B=11111111  CONCATENATE OF A,B=0000000011111111  
+Conactenate of {A,B} is sucessful
+------Addition of A with A------
+A=10001001   SUM=0000000100010010  CARRY=1
+Addition of A with A is successful
+A=00000000   SUM=0000000000000000  CARRY=0
+Addition of A with A is successful
+A=11111111   SUM=0000000111111110  CARRY=1
+Addition of A with A is successful
+----------------------All Test Cases Completed-------------------
