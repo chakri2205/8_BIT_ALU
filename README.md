@@ -72,5 +72,5 @@ This project is a Verilog-based implementation of an **8-bit Arithmetic Logic Un
 - **P Chakradhar**
 - B.Tech Final Year – Aspiring RTL Design & Verification Engineer
 - [GitHub Profile](https://github.com/chakri2205)
-- [Gmail id](chakradhar2205@gmail.com)
+- [Gmail id](mailto:chakradhar2205@gmail.com)
 
